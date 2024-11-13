@@ -68,8 +68,9 @@
         }
 
         .brand-text {
-            font-size: 1.5em;
-            font-weight: 600;
+            font-size: 1em;
+            font-weight: 500;
+        
         }
 
         .download-btn {
@@ -236,6 +237,7 @@
             font-size: 1.1em;
             line-height: 1.6;
             margin-top: 20px;
+            
         }
 
         /* Call to Action */
@@ -255,8 +257,10 @@
         }
 
         .cta p {
-            font-size: 1.2em;
+            font-size: 1em;
             margin-bottom: 20px;
+            color: #848484;
+
         }
 
         .cta .download-btn {
@@ -381,6 +385,54 @@
                 opacity: 1;
             }
         }
+
+        /* Additional Mobile View Styles */
+        .mobile-points {
+            display: none;
+            margin-top: 20px;
+            text-align: left;
+            font-size: 1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Paragraph styling for .info section */
+        .info p {
+            color: #a8a8a8; /* Lighter grey color */
+            font-weight: 300; /* Thinner text */
+        }
+
+        /* Mobile view display */
+        @media (max-width: 768px) {
+            .mobile-points {
+                display: block;
+            }
+        }
+
+        /* Mobile Points Styling */
+        .mobile-point {
+            display: none;
+            font-size: 1em;
+            line-height: 1.4;
+            color: #292929;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* Display the points on mobile view */
+        @media (max-width: 768px) {
+            .mobile-point {
+                display: block;
+            }
+
+            .app-preview {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+
     </style>
 </head>
 <body>
@@ -407,12 +459,25 @@
         <a href="#" class="app-store-btn">
             <img src="assets/app_store_btn.png" alt="Download on the App Store" style="height: 50px;">
         </a>
+
         <div class="app-previews">
+            <!-- Point 1 -->
+            <p class="mobile-point">1. Simply brain dump your tasks and let the AI handle planning and organization for you.</p>
             <img src="assets/app_preview_1.png" alt="App Preview 1" class="app-preview">
+        
+            <!-- Point 2 -->
+            <p class="mobile-point">2. Easily categorize, prioritize, and track all your to-dos.</p>
             <img src="assets/app_preview_2.png" alt="App Preview 2" class="app-preview">
+        
+            <!-- Point 3 -->
+            <p class="mobile-point">3. Focus deeply with customizable Pomodoro timers and stay locked in without distractions.</p>
             <img src="assets/app_preview_3.png" alt="App Preview 3" class="app-preview">
+        
+            <!-- Point 4 -->
+            <p class="mobile-point">4. Track your progress and gain insights to optimize your focus over time while competing with others.</p>
             <img src="assets/app_preview_4.png" alt="App Preview 4" class="app-preview">
         </div>
+        
     </section>
 
     <!-- Testimonials -->
@@ -431,7 +496,13 @@
     <!-- Info Section -->
     <section class="info">
         <h2>How does LockedIn AI work?</h2>
-        <p> LockedIn AI revolutionizes your productivity by combining AI-driven task planning with advanced focus management tools. Upon onboarding, it assesses your habits to generate personalized recommendations to enhance your focus. Use voice or text input to transform your thoughts into organized, prioritized to-do lists with the help of the AI assistant. Stay on track with a robust Pomodoro timer and lock screen notifications that keep you updated without unlocking your phone. Dive into detailed productivity analytics to monitor your progress, set new goals, and maintain momentum by competing with other users — all within a customizable and intuitive interface designed to keep you locked in on your objectives.</p>
+        <p>
+            LockedIn AI revolutionizes your productivity by combining AI-driven task planning with advanced focus management tools.<br><br>
+            Upon onboarding, it assesses your habits to generate personalized recommendations to enhance your focus.<br><br>
+            You can use voice or text input to transform your thoughts into organized, prioritized to-do lists with the help of the AI assistant.<br><br>
+            Stay on track with a robust Pomodoro timer and lock screen notifications that keep you updated without unlocking your phone.<br><br>
+            Dive into detailed productivity analytics to monitor your progress, set new goals, and maintain momentum while competing with other users — all within a customizable and intuitive interface designed to keep you locked in on your objectives.
+        </p>
     </section>
 
     <!-- Call to Action -->
