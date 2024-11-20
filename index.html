@@ -25,6 +25,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LockedIn AI</title>
     <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "p1qfue78ds");
+    </script>
+
     <style>
         /* Reset */
         * {
@@ -398,7 +407,7 @@
 
         /* Paragraph styling for .info section */
         .info p {
-            color: #c3c3c3; /* Lighter grey color */
+            color: #c0c0c0; /* Lighter grey color */
             font-weight: 300; /* Thinner text */
         }
 
@@ -430,6 +439,15 @@
                 margin-top: 0;
                 margin-bottom: 20px;
             }
+        }
+
+        footer a img {
+        text-decoration: none; /* Remove underline for icons */
+        display: inline-block; /* Ensure consistent spacing */
+        vertical-align: middle; /* Align icons properly */
+        }
+        footer a {
+            text-decoration: none; /* Remove underline from the link itself */
         }
 
 
@@ -525,8 +543,9 @@
         
                 #response-message {
                     margin-top: 10px;
-                    font-size: 1em;
-                    text-align: center;
+                margin-bottom: 20px; /* Add this line */
+                font-size: 1em;
+                text-align: center;
                 }
         
                 #response-message.success {
@@ -591,7 +610,7 @@
                     // Define callback function
                     window.handleResponse = function (response) {
                         if (response.result === "success") {
-                            responseMessage.textContent = "Thank you, we will notify you soon";
+                            responseMessage.textContent = "Thank you, we'll notify you soon!";
                             responseMessage.className = "success";
                             emailField.value = ""; // Clear the email field
                         } else {
@@ -673,13 +692,26 @@
     <footer>
         <p>Copyright © 2024 LockedIn AI</p>
         <p>Made with 🩷 in Canada </p>
-        <div class="footer-links" style="font-size: 0.85em; color: #555;">
+        <div>
+            <a href="https://www.instagram.com/lockedinai" style="margin: 0 10px;">
+                <img src="assets/instagram.png" alt="Instagram" style="width: 20px; height: 20px;">
+            </a>
+            <a href="https://whop.com/" style="margin: 0 10px;">
+                <img src="assets/whop.png" alt="Whop" style="width: 25px; height: 25px;">
+            </a>
+            <a href="https://www.tiktok.com/@lockedinai" style="margin: 0 10px;">
+                <img src="assets/tiktok.png" alt="TikTok" style="width: 20px; height: 20px;">
+            </a>
+        </div>
+        <div class="footer-links" style="font-size: 0.85em; color: #555; margin-bottom: 20px;">
             <a href="terms.html" style="margin: 0 5px;">Terms</a> |
             <a href="privacy.html" style="margin: 0 5px;">Privacy</a> |
             <a href="about.html" style="margin: 0 5px;">About</a> |
             <a href="mailto:lockedindeveloper@gmail.com?subject=Support%20Request&body=Hello%20Support%20Team," style="margin: 0 5px;">Contact</a>
-        </div>        
+        </div>
     </footer>
+    
+    
 
     <!-- JavaScript for Word Swap Animation -->
     <script>
